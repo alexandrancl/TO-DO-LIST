@@ -27,6 +27,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 65%;
+    margin: 5px;
 }
 
 h1{
@@ -39,7 +41,7 @@ input{
     background-color: rgb(0, 0, 0, 0.0);
     font-size: 30px;
     font-family: 'Questrial', sans-serif;
-    width: 80%;
+    width: 50%;
     margin: 3px;
 }
 input:focus{
@@ -52,14 +54,53 @@ button{
     font-size: 25px;
     color: #b3e5e9;
     border-radius: 5px;
-    width: 30%;
+    width: 20%;
     height: 30px;
     cursor: pointer;
     background-color: #269da5;
+    margin: 3px;
 }
 
 .list-tasks{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 65%;
+    margin: 5px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    width: 89%;
+    display: flex;
+    align-items: center;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+}
+.right p{
+    padding-left: 0.5em;
+}
+
+.left{
+    width: 11%;
+    display: flex;
+    padding-right: 0px;
+}
+
+img{
+    width: 25px;
+}
+
+.left img{
+    margin: 2px;
 }
