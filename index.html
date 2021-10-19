@@ -1,60 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TO DO LIST</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <div class="main-container">
-        <div class="new-task">
-            <h1>NEW TASK</h1>
-            <input type="text" placeholder="• Título de la tarea">
-            <input type="text" placeholder="• Descripción de la tarea">
-            <button  id="save-btn">Guardar</button>
+      <div class="new-task">
+        <h1>NEW TASK</h1>
+        <input id="title-task" type="text" placeholder="Título de la tarea" />
+        <textarea
+          id="description-task"
+          type="text"
+          placeholder="Descripción de la tarea"
+        ></textarea>
+        <button id="save-btn">Guardar</button>
+      </div>
+      <div class="list-tasks">
+        <div class="title-list">
+          <h1>TO-DO LIST</h1>
         </div>
-        <div class="list-tasks">
-            <div class="title-list">
-                <h1>TO-DO LIST</h1>
-            </div>
-            <div class="list">
-                <div class="item">
-                    <div class="right">
-                        <img src="img/to-do.svg" alt="">
-                        <p>Completar los ejercicios de álgebra</p>
-                    </div>
-                    <div class="left">
-                        <img src="img/eye.svg" alt="">
-                        <img src="img/edit.svg" alt="">
-                        <img src="img/delete.svg" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="right">
-                        <img src="img/to-do.svg" alt="">
-                        <p>Completar los ejercicios de álgebra</p>
-                    </div>
-                    <div class="left">
-                        <img src="img/eye.svg" alt="">
-                        <img src="img/edit.svg" alt="">
-                        <img src="img/delete.svg" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="right">
-                        <img src="img/to-do.svg" alt="">
-                        <p>Completar los ejercicios de álgebra</p>
-                    </div>
-                    <div class="left">
-                        <img src="img/eye.svg" alt="">
-                        <img src="img/edit.svg" alt="">
-                        <img src="img/delete.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="list" id="list-container"></div>
+      </div>
     </div>
-</body>
+    <dialog style="width: 100%" id="task-detail-dialog">
+      <div class="dialog">
+        <div class="task-detail">
+          <div id="close-dialog" class="close-dialog">x</div>
+          <div class="task-detail__title">Completar la tarea</div>
+          <p class="task-detail__description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum a
+            totam excepturi nemo aut fugit odit, rerum, vero fugiat alias hic
+            ducimus dignissimos magni laudantium minus dolores expedita, eos
+            laborum.
+          </p>
+          <div class="task-detail__complete">completo : SI</div>
+        </div>
+      </div>
+    </dialog>
+    <script src="js/crud.js"></script>
+  </body>
 </html>

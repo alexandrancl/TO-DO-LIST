@@ -1,106 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
-*{
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-}
-
-body{
-    background-color: rgb(226, 220, 130);
-    font-family: 'Spicy Rice', cursive;
-    display: flex;
-    justify-content: center;
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
 }
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    padding-top: 6em;
+body {
+  background-color: rgb(226, 220, 130);
+  font-family: "Spicy Rice", cursive;
+  display: flex;
+  justify-content: center;
 }
 
-.new-task{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 65%;
-    margin: 5px;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding-top: 6em;
 }
 
-h1{
-    font-size: 100px;
-    color: rgb(212, 80, 40);
-    text-shadow: 7px 7px #269da5;
+.new-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  margin: 5px;
 }
 
-input{
-    background-color: rgb(0, 0, 0, 0.0);
-    font-size: 30px;
-    font-family: 'Questrial', sans-serif;
-    width: 50%;
-    margin: 3px;
-}
-input:focus{
-    outline: 0px;
+h1 {
+  font-size: 100px;
+  color: rgb(212, 80, 40);
+  text-shadow: 7px 7px #269da5;
 }
 
-button{
-    font-family: 'Questrial', sans-serif;
-    font-weight: bolder;
-    font-size: 25px;
-    color: #b3e5e9;
-    border-radius: 5px;
-    width: 20%;
-    height: 30px;
-    cursor: pointer;
-    background-color: #269da5;
-    margin: 3px;
+.new-task input,
+.new-task textarea {
+  background-color: rgb(0, 0, 0, 0.1);
+  padding: 0.3em;
+  font-size: 30px;
+  font-family: "Questrial", sans-serif;
+  width: 50%;
+  margin: 3px;
+}
+.new-task input:focus,
+.new-task textarea:focus {
+  outline: 0px;
 }
 
-.list-tasks{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 65%;
-    margin: 5px;
+button {
+  font-family: "Questrial", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #b3e5e9;
+  border-radius: 5px;
+  width: 20%;
+  height: 30px;
+  cursor: pointer;
+  background-color: #269da5;
+  margin: 3px;
 }
 
-.list{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+.list-tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  margin: 5px;
 }
 
-.item{
-    display: flex;
-    align-items: center;
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 
-.right{
-    width: 89%;
-    display: flex;
-    align-items: center;
-    font-family: 'Questrial', sans-serif;
-    font-size: 20px;
-}
-.right p{
-    padding-left: 0.5em;
+.item {
+  display: flex;
+  align-items: center;
 }
 
-.left{
-    width: 11%;
-    display: flex;
-    padding-right: 0px;
+.right {
+  width: 89%;
+  display: flex;
+  align-items: center;
+  font-family: "Questrial", sans-serif;
+  font-size: 20px;
+}
+.right p {
+  padding-left: 0.5em;
 }
 
-img{
-    width: 25px;
+.left {
+  width: 11%;
+  display: flex;
+  padding-right: 0px;
 }
 
-.left img{
-    margin: 2px;
+img {
+  width: 25px;
+}
+
+.left img {
+  margin: 2px;
+}
+
+.dialog {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.task-detail {
+  background-color: seashell;
+  width: 50%;
+  min-height: 20rem;
+  padding: 2em;
+  border-radius: 10px;
+}
+.task-detail__title {
+  font-size: 2em;
+  text-align: center;
+}
+.task-detail__description {
+  font-family: "Lucida Sans";
+  margin-top: 2em;
+}
+.task-detail__complete {
+  margin-top: 1em;
+}
+.close-dialog {
+  text-align: end;
+  cursor: pointer;
 }
