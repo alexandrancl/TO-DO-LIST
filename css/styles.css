@@ -106,6 +106,7 @@ img {
 
 .left img {
   margin: 2px;
+  cursor: pointer;
 }
 
 #task-detail-dialog::backdrop {
@@ -127,7 +128,7 @@ dialog[open] {
 }
 .task-detail {
   background-color: seashell;
-  width: 50%;
+  width: 100%;
   min-height: 20rem;
   padding: 2em;
   border-radius: 10px;
@@ -146,4 +147,26 @@ dialog[open] {
 .close-dialog {
   text-align: end;
   cursor: pointer;
+}
+
+.edit-form-container {
+  margin-top: 2em;
+  display: flex;
+  width: 35rem;
+  flex-direction: column;
+  align-items: center;
+}
+.edit-form-container input {
+  padding: 0.5em 1em;
+  width: 90%;
+  margin-bottom: 1em;
+}
+.edit-form-container textarea {
+  padding: 0.5em 1em;
+  width: 90%;
+  min-height: 3rem;
+}
+.edit-form-container button {
+  width: 50%;
+  margin-top: 2em;
 }
